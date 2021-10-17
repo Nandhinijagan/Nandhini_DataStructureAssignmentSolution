@@ -65,12 +65,11 @@ class BST
 
 	// Driver Code
 	public static void main (String[] args) {
-	//    50
+	//       50
 	//	 / \
 	// 	30  60
-	// /	/
-	//10   40
-		
+	//     /  \	
+	//    10   40
 		BST tree = new BST();
 		tree.node = new Node(50);
 		tree.node.left = new Node(30);
