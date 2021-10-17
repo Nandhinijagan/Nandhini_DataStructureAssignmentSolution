@@ -66,7 +66,7 @@ class BST
 	// Driver Code
 	public static void main (String[] args) {
 	//       50
-	//	 / \
+	//		 / \
 	// 	30  60
 	//     /  \	
 	//    10   40

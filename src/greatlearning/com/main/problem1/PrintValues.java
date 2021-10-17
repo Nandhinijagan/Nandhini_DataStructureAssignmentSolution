@@ -23,6 +23,7 @@ public class PrintValues {
 	}
 	
 	public void printConstructionOrder(LinkedList<Floor> floor_list) {
+		if (floor_list.size() > 0)
 		System.out.println("The order of construction is as follows: ");
 		buildingConstructionOrder(floor_list);
 		floor_list.clear();

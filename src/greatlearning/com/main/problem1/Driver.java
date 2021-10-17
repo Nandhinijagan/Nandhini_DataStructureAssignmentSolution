@@ -16,9 +16,11 @@ public class Driver {
 	
 	public void insertValue() { 
 		// Get the total no of floors
+		do {
 		System.out.println("Enter the total no of floors in the building");
 		numberOfFloors = sc.nextInt();
 		// Get the value of each floor in the loop 
+		if(numberOfFloors > 0) {
 		for (i = 0; i < numberOfFloors; i++) {
 
 			Floor floor = new Floor();
@@ -34,7 +36,11 @@ public class Driver {
 				i--;
 			}
 		}
-
+		}else {
+			System.out.println("Please entry valid no of floor.");
+		}
+		}while(numberOfFloors == 0);
+		
 		// Sorting list in reverse order
 		Collections.sort(floor_list, new FloorNumberComparator());
 		// printing output
